@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrack - Registration</title>
+    <link href="css/login.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="form-container sign-up-container" id="signupSection" >
+      <form action="#">
+        <h2>Create Account</h2>
+        <input type="number" placeholder="Aadhar number(12digit)" id="aadharNumber" required>    
+        <input type="text" placeholder="Username" id="name" readonly>
+        <input type="text" id="pincode" placeholder="pincode" readonly>
+        <input type="text" placeholder=" District" id="city" readonly>
+        <input type="text" placeholder="Gender" id="gender" readonly> 
+        <button onclick="fetchUserDetails()">Fetch Details</button>  
+        <button style="margin-top:20px;" id="signupButton" onclick="signup()" disabled>Sign Up</button>
+
+
+        
+
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form id="loginForm">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username" />
+       
+        <button type="submit" style="margin-top: 20px;">Login</button>
+        <a href="#">Forgot your password?</a>
+      </form>
+    </div>
+
+
+    
+    <script>
+      document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent default form submission
+    
+        const username = document.getElementById("username").value;
+        
+        // Check if the username and mobile number match the expected values
+        if (username === "John") {
+          // Redirect to index.html (change this to your desired redirect URL)
+          window.location.href = "index.html";
+        } else {
+          // Alert a message if login details are incorrect
+          alert("Username do not match.");
+        }
+      });
+    </script>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back!</h1>
+          <p>To keep connected with us please login with your personal info</p>
+          <button class="ghost" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal details and start journey with us</p>
+          <button class="ghost" id="signUp">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+      <script src="js/login.js"></script>
+      <script>
+        function fetchUserDetails() {
+            // Mock data for demonstration purposes
+            const userDetailMap = {
+                '123456789012': { name: 'John', city: 'Example City', gender: 'Male' , pincode:'625531'},
+                // Add more user details as needed
+            };
+
+            // Get the Aadhar Number input value
+            const aadharNumberInput = document.getElementById('aadharNumber');
+            const aadharNumber = aadharNumberInput.value;
+
+            // Check if the Aadhar Number is 12 digits
+            if (aadharNumber.length === 12 && userDetailMap.hasOwnProperty(aadharNumber)) {
+                // Fill in the other details
+                const userDetails = userDetailMap[aadharNumber];
+                document.getElementById('name').value = userDetails.name;
+                document.getElementById('city').value = userDetails.city;
+                document.getElementById('gender').value = userDetails.gender;
+                document.getElementById('pincode').value = userDetails.pincode;
+
+                // Enable and set opacity to 1 for the Sign Up button
+                document.getElementById('signupButton').disabled = false;
+                document.getElementById('signupButton').style.opacity = 1;
+            } else {
+                // Clear other details if the Aadhar Number is not 12 digits or not found
+                document.getElementById('name').value = 'Invalid Data';
+                document.getElementById('city').value = 'Invalid Data';
+                document.getElementById('gender').value = 'Invalid Data';
+                document.getElementById('pincode').value = 'Invalid Data';
+
+                // Disable and set opacity to 0.5 for the Sign Up button
+                document.getElementById('signupButton').disabled = true;
+                document.getElementById('signupButton').style.opacity = 0.5;
+            }
+        }
+
+        function signup() {
+            // Perform signup logic here using the data from the form
+            const aadharNumber = document.getElementById('aadharNumber').value;
+            const username = document.getElementById('username').value;
+            const mobileNo = document.getElementById('mobileNo').value;
+            const district = document.getElementById('district').value;
+            const address = document.getElementById('address').value;
+
+            // Perform signup logic, for now, display the collected data (you can replace this with actual signup logic)
+            alert(`Signup Successful!\nAadhar Number: ${aadharNumber}\nUsername: ${username}\nMobile No: ${mobileNo}\nDistrict: ${district}\nAddress: ${address}`);
+        }
+    </script>
+
+</body>
+</html>

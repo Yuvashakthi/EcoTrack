@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>EcoTrack - Home</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    
+
+<style>
+section {
+  width: 80%;
+  height: 60px;
+  box-sizing: border-box;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+.card {
+  position: relative;
+  min-width: 200px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  transition: .5s;
+    margin: 30px;
+  margin-top:30px;
+}
+.card:hover {
+  transform:scale(1.1);
+}
+.card_red, .card_red .title .fa {
+  background: linear-gradient(-45deg, #ffec61, #f321d7);
+}
+.card_violet, .card_violet .title .fa  {
+  background: linear-gradient(-45deg, #f403d1, #64b5f6);
+}
+.card_three, .card_three .title .fa  {
+  background: linear-gradient(-45deg, #24ff72, #9a4eff);
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  height: 40%;
+  background: rgba(255, 255, 255, .1);
+  z-index: 1;
+  transform: skewY(-5deg) scale(1.5);
+}
+
+.title .fa {
+  color: #fff;
+  font-size: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+.title h2 {
+  position: relative;
+  margin: 20px 0 0;
+  padding: 10;
+  color: #fff;
+  font-size: 28px;
+  z-index: 2;
+}
+.price {
+  position: relative;
+  z-index: 2;
+}
+.price h4 {
+  margin: 0;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 60px;
+}
+.option {
+  position: relative;
+  z-index: 2;
+}
+.option ul {
+  margin: 0;
+  padding: 0;
+}
+.option ul li {
+  margin: 0 0 10px;
+  margin-bottom: 8px;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.card a {
+  display: block;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  color: #262f;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  margin: 20px auto 0;
+  line-height: 40px;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(0,0,0, .1);
+}
+.card a:hover {
+  
+}
+
+.center{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+</style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0">EcoTrack</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="ministry.html" class="nav-item nav-link">Ministry Dashboard</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Consumer Dashboard</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="user.html" class="dropdown-item">Event/Activity</a>
+                        <a href="goods.html" class="dropdown-item">Goods Purchased</a>
+                    </div>
+                </div>
+                <a href="reward.html" class="nav-item nav-link">Reward </a> 
+                <a href="user-login.html" class="nav-item nav-link">Login <span id="loginCount"></span></a>               
+            </div>
+           
+    </nav>
+    <!-- Navbar End -->
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/home.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h1 class="text-white mb-3 animated slideInDown" style="line-height:70px;font-size:50px;">Every act of environmental kindness ripples into a wave of positive impact.</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/home2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7">
+                                    <h1 class=" text-white mb-3 animated slideInDown" style="line-height:70px;font-size:50px;">Earth smiles when we tread lightly</h1>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Top Feature Start -->
+    <div class="container-fluid top-feature py-5 pt-lg-0">
+      <div class="container py-5 pt-lg-0">
+          <div class="row gx-0">
+              <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                  <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                      <div class="d-flex">
+                          <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                              <i class="fa fa-award" style="font-size:30px; color:rgb(0,100,0);"></i>
+                          </div>
+                          <div class="ps-3">
+                              <h4>LiFE Activity</h4>
+                              <span>Blending wisdom and science for sustainable living and global responsibility.</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                  <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                      <div class="d-flex">
+                          <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                              <i class="fa fa-tools" style="font-size:30px; color:rgb(0,100,0);"></i>
+                          </div>
+                          <div class="ps-3">
+                              <h4>Schemes</h4>
+                              <span>A versatile platform for comprehensive growth and development opportunities.</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                  <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                      <div class="d-flex">
+                          <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                              <i class="fa fa-users" style="font-size:30px; color:rgb(0,100,0);"></i>
+                          </div>
+                          <div class="ps-3">
+                              <h4>Awareness</h4>
+                              <span>Cultivating conscious understanding for positive societal impact through information and education.</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Top Feature End -->
+
+  <section style="margin-left: auto; margin-right:auto;">
+    <div class="container mt-5">
+        <div class="card spin-card animated">
+          <i class="fas fa-user fa-3x mx-auto mt-3"></i>
+          <!-- <div class="card-body text-center"> -->
+            <a  href="user-login.html" class="card-title" style="color:#000; font-size:large; padding:5px; text-decoration: none; margin-bottom: 8px;">Unlock portal !</a>
+<!--             
+          </div> -->
+        </div>
+      </div>
+</section>
+
+    <section style="margin-top:60px; margin-bottom: 460px;">
+
+     
+          
+        <div class="container-fluid">
+          <div class="container">
+            <div class="row">
+                <h1 style="margin-top: 30px; align-items: center; justify-content: center; margin-left: auto; margin-right: auto; text-align: center;">Benefits of Action</h1>
+              <div class="col-sm-4">
+                <div class="card card_red text-center">
+                  <div class="title">
+                    <h2>Reward</h2>
+                  </div>
+                  
+                  <div class="option">
+                    <ul>
+                      <li>Earn exclusive rewards while you stay green – discounts, special offers, and certificates await on our platform!</li>
+                      
+                      </ul>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card card_violet text-center">
+                  <div class="title">
+                    <h2>Choices</h2>
+                  </div>
+                 
+                  <div class="option">
+                    <ul>
+                      <li>
+                        Earn personalized rewards, from stunning art to surprise boxes and wild wins, shaping your adventure on our platform!</li>
+                      
+                      </ul>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col-sm-4">
+                    <div class="card card_three text-center">
+                    <div class="title">
+                        <h2>Surprises</h2>
+                    </div>
+                    
+                    <div class="option">
+                        <ul>
+                        <li>stunning art,surprises, &  crazy rewards await your every interaction! Every click is a celebration.</li>
+                        
+                        </ul>
+                    </div>
+                    
+                    </div>
+              </div>
+              <div class="center">
+              <div class="col-sm-4">
+                <div class="card card_three text-center">
+                <div class="title">
+                    <h2>Online Support</h2>
+                </div>
+                
+                <div class="option">
+                    <ul>
+                    <li>Earn government rewards, discounts, and special offers for your eco-activism!</li>
+                    
+                    </ul>
+                </div>
+                
+                </div>
+          </div> 
+        </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+    
+     <!-- Features Start -->
+     <div class="container-xxl py-5">
+      <div class="container">
+          <div class="row g-5 align-items-center">
+              <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                  <p class="fs-5 fw-bold text-primary">Why EcoTrack!</p>
+                  <h1 class="display-5 mb-4">Few Reasons Why People Choosing Us!</h1>
+                  <p class="mb-4">Choosing an eco-friendly lifestyle preserves the planet by reducing carbon footprint and promoting sustainable choices for a healthier environment and resource preservation.</p>
+                  <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
+              </div>
+              <div class="col-lg-6">
+                  <div class="row g-4 align-items-center">
+                      <div class="col-md-6">
+                          <div class="row g-4">
+                              <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                  <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                      <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 100px; height: 100px;">
+                                          <i class="fa fa-tree fa-tree text-primary " style="font-size: 50px;"></i>
+                                      </div>
+                                      <h4 class="mb-0">Earthwise Living</h4>
+                                  </div>
+                              </div>
+                              <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                  <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                      <div class="btn-square bg-light rounded-circle mx-auto mb-6" style="width: 100px; height: 100px;">
+                                          <i class="fa fa-leaf fa-leaf text-primary " style="font-size: 50px;"></i>
+                                      </div>
+                                      <h4 class="mb-0"style="margin:20px;">EcoHarmony Lifestyle</h4>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                          <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                              <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                  <i class="fa fa-tools fa-aw text-primary" style="font-size: 50px;"></i>
+                              </div>
+                              <h4 class="mb-0">GreenImpact Living</h4>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Features End -->
+
+
+    
+   
+   
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="display-4 text-white" data-toggle="counter-up">500</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Consumers</span>
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <h1 class="display-4 text-white" data-toggle="counter-up">433</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Participants</span>
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-4 text-white" data-toggle="counter-up">222</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Awareness</span>
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                    <h1 class="display-4 text-white" data-toggle="counter-up">465</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Voulnteer Activity</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+    
+     <!-- About Start -->
+     <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/4b9a0c0e54e8c9d8e730f43ab6248739.jpg">
+                </div>
+                <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="display-5 mb-4">What to do?</h1>
+                    <p class="mb-4">Adopt an eco-friendly lifestyle by choosing sustainable products, minimizing waste, conserving energy and water, and supporting eco-friendly initiatives.
+                        </p>
+                    <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
+                </div>
+                <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-5">
+                        <div class="col-12 col-sm-6 col-lg-12">
+                            <div class="border-start ps-4">
+                                <i class="fa fa-tree fa-3x text-primary mb-3"></i>
+                                <h4 class="mb-3">GreenHabit Living</h4>
+                                <span> Sustainable choices for a greener lifestyle.</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-12">
+                            <div class="border-start ps-4">
+                                <i class="fa fa-users fa-3x text-primary mb-3"></i>
+                                <h4 class="mb-3">EcoStride Lifestyle</h4>
+                                <span>Harmonizing well-being with eco-conscious choices for a sustainable life.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+   
+       <!-- Service Start -->
+       <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+
+                <p class="fs-5 fw-bold text-primary">Schemes and Awareness program</p>
+                <p class="fs-5 fw-bold text-primary">Schemes </p>
+
+                <!-- <h1 class="display-5 mb-5">Harvest Green Success: Join Schemes for a Flourishing Environment.</h1> -->
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/rain back.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="img/rain png.png" alt="Icon">
+                            </div>
+                            <h4 class="mb-3">Catch Rain Water</h4>
+                            <p class="mb-4"> Every drop counts: Catch the rain, quench the thirst.</p>
+                            <a class="btn btn-sm" href="https://nwm.gov.in/catchtherain"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/swatch back.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="img/swatch.png.png" alt="Icon">
+                            </div>
+                            <h4 class="mb-3">Swachh Bharat Mission</h4>
+                            <p class="mb-4">Let's build a cleaner legacy: Together, we can make India Swachh.</p>
+                            <a class="btn btn-sm" href="https://swachhbharatmission.gov.in/sbmcms/index.htm"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/fame-II.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="img/fame-II.png.png" alt="Icon">
+                            </div>
+                            <h4 class="mb-3">FAME-II scheme</h4>
+                            <p class="mb-4">Electrifying India: Boosting e-vehicles with demand and infrastructure.</p>
+                            <a class="btn btn-sm" href="https://evyatra.beeindia.gov.in/central-govt-initiative-details/dhi-fame-scheme-phase-1-2015/"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                    
+                        <p class="fs-5 fw-bold text-primary text-center">LiFE Activites </p>
+                        <!-- <h1 class="display-5 mb-5">Harvest Green Success: Join Schemes for a Flourishing Environment.</h1> -->
+                   
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded d-flex h-100">
+                            <div class="service-img rounded">
+                                <img class="img-fluid" src="img/save water back.jpg" alt="">
+                            </div>
+                            <div class="service-text rounded p-5">
+                                <div class="btn-square rounded-circle mx-auto mb-3">
+                                    <img class="img-fluid" src="img/save water.png.png" alt="Icon">
+                                </div>
+                                <h4 class="mb-3">Conserve Water</h4>
+                                <p class="mb-4">Save water, fix leaks, ensure a sustainable future.</p>
+                                <a class="btn btn-sm" href="https://swachhbharatmission.gov.in/sbmcms/index.htm"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded d-flex h-100">
+                            <div class="service-img rounded">
+                                <img class="img-fluid" src="img/save energy back.jpg" alt="">
+                            </div>
+                            <div class="service-text rounded p-5">
+                                <div class="btn-square rounded-circle mx-auto mb-3">
+                                    <img class="img-fluid" src="img/save energy.png.png" alt="Icon">
+                                </div>
+                                <h4 class="mb-3">Conserve Energy</h4>
+                                <p class="mb-4"> Empower a greener tomorrow: minimize energy, embrace efficiency, and inspire a sustainable revolution.</p>
+                                <a class="btn btn-sm" href="https://nwm.gov.in/catchtherain"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded d-flex h-100">
+                            <div class="service-img rounded">
+                                <img class="img-fluid" src="img/plastic back.jpg" alt="">
+                            </div>
+                            <div class="service-text rounded p-5">
+                                <div class="btn-square rounded-circle mx-auto mb-3">
+                                    <img class="img-fluid" src="img/plastic1.png.png" alt="Icon">
+                                </div>
+                                <h4 class="mb-3">Say noto single use plastic</h4>
+                                <p class="mb-4">Reject single-use plastics, choose reusables, and champion a plastic-free lifestyle for a sustainable future.</p>
+                                <a class="btn btn-sm" href="https://jaljeevanmission.gov.in/"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <p class="fs-5 fw-bold text-primary text-center">Awarness </p>
+                    <!-- <h1 class="display-5 mb-5">Harvest Green Success: Join Schemes for a Flourishing Environment.</h1> -->
+               
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/green energy back.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="img/green energy .png.png" alt="Icon">
+                            </div>
+                            <h4 class="mb-3">GreenLiving Challenge</h4>
+                            <p class="mb-4">EcoMonth Challenge: Cut carbon, conserve, build a sustainable community.</p>
+                            <a class="btn btn-sm" href="https://pib.gov.in/PressReleasePage.aspx?PRID=1606096#:~:text=Under%20the%20National%20River%20Conservation,conformity%20with%20the%20scheme%20guidelines%2C"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/eco series back.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="img/eco talk.png.png" alt="Icon">
+                            </div>
+                            <h4 class="mb-3">EcoTalk Series</h4>
+                            <p class="mb-4"> Inspiring community change through expert insights on climate, conservation, and sustainability</p>
+                            <a class="btn btn-sm" href="https://pib.gov.in/PressReleasePage.aspx?PRID=1606096#:~:text=Under%20the%20National%20River%20Conservation,conformity%20with%20the%20scheme%20guidelines%2C"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/project clean back.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="img/project clean.png.png" alt="Icon">
+                            </div>
+                            <h4 class="mb-3">Project Clean Sweep</h4>
+                            <p class="mb-4">Mobilize communities for hands-on cleanups, coupled with waste reduction education, fostering a cleaner environment and awareness.</p>
+                            <a class="btn btn-sm" href="https://pib.gov.in/PressReleasePage.aspx?PRID=1606096#:~:text=Under%20the%20National%20River%20Conservation,conformity%20with%20the%20scheme%20guidelines%2C"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <div class="container">
+        <div class="row">
+          <!-- Left side with image -->
+          <div class="col-md-4">
+            <img src="img/benefit.jpg" alt="Image" class="img-fluid">
+          </div>
+          
+          <!-- Right side with content -->
+          <div class="col-md-8">
+            <h2>Benefit</h2>
+            <p>Embracing an environment-friendly lifestyle yields numerous benefits. These include positive
+                environmental impact, contributions to a sustainable future, personal well-being, cost savings,
+                global and community influence, cultural value preservation, and an educational platform to
+                raise awareness about crucial environmental issues</p>
+            <!-- Add more content as needed -->
+          </div>
+        </div>
+      </div>
+
+  
+ 
+
+ 
+
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/parallax/parallax.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.spin-card').on('click', function(){
+        $(this).toggleClass('rotateIn');
+      });
+    });
+  </script>
+
+<script>
+   
+    function fetchLoginCount() {
+       
+        return 2; 
+    }
+
+    
+    function updateLoginCount() {
+        const loginCount = fetchLoginCount();
+        const loginCountElement = document.getElementById('loginCount');
+        loginCountElement.textContent = ` (${loginCount} logged in today)`; // Display the count
+    }
+
+    
+    window.onload = function () {
+        updateLoginCount();
+    };
+</script>
+
+</body>
+
+</html>

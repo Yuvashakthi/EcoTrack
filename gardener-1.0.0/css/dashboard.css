@@ -1,0 +1,60 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: #f0fff0; /* Light green background */
+  }
+  
+  .form-container h2 {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  select,
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .second-form {
+    display: none; /* Hide initially */
+    width: 350px;
+  }
+  
+  .statistical-results {
+    border: 1px solid green;
+    padding: 20px;
+    margin-top: 20px;
+  }
