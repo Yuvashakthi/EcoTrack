@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/gvt.css">
+
+</head>
+
+
+<body>
+
+
+    <header>
+        Ministry of Environment - LiFE Monitoring Dashboard
+    </header>
+    
+    <h2 style="text-align: center; margin-top: 20px;">LiFE Activities Monitoring</h2>
+    <p style="text-align: center; margin-bottom: 30px; line-height: 30px; ">This dashboard enables the Ministry of Environment to track, analyze, and compare LiFE activities. It helps in identifying areas for improvement and supports decision-making to enhance organizational efficiency and sustainability efforts.</p>
+
+
+    <div class="tab">
+
+        <button class="tablinks" onclick="openCity(event, 'reducing-waste')">Reducing Waste</button>
+        <button class="tablinks" onclick="openCity(event, 'adopting-lifestyles')">Adopting Healthy Lifestyles</button>
+        <button class="tablinks" onclick="openCity(event, 'water-management')">Water Management</button>
+        <button class="tablinks" onclick="openCity(event, 'energy-efficiency')">Energy Efficiency</button>
+        <button class="tablinks" onclick="openCity(event, 'saving-wetlands')">Saving Wetlands </button>
+        <button class="tablinks" onclick="openCity(event, 'plastic-pollution')">Solutions to Plastic Pollution</button>
+
+    </div>
+
+    
+
+    <div id="reducing-waste" class="tabcontent">
+
+        <h3>Reducing Waste </h3>
+        <p>Urban waste disposal has reduced by <strong>15%</strong> in 2024 compared to 2023.</p>
+
+        <div class="subcategories">
+                <h3>Subcategories:</h3>
+                <table>
+                    <tr>
+                        <th>Subcategory</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Product Purchase</td>
+                        <td>200,000 eco-friendly products distributed.</td>
+                        <td class="status green">✓</td>
+                    </tr>
+                    <tr>
+                        <td>Schemes</td>
+                        <td>3 new schemes initiated this year for rural waste management.</td>
+                        <td class="status green">✓</td>
+                    </tr>
+                    <tr>
+                        <td>Community</td>
+                        <td>Local waste segregation efforts increased by 12%.</td>
+                        <td class="status yellow">!</td>
+                    </tr>
+                    <tr>
+                        <td>Programs</td>
+                        <td>1,000 km of coastline cleaned.</td>
+                        <td class="status green">✓</td>
+                    </tr>
+                    <tr>
+                        <td>Services</td>
+                        <td>3 recycling centers opened in urban areas.</td>
+                        <td class="status red">X</td>
+                    </tr>
+                </table>
+        </div>
+
+        <section class="comparison-section">
+                <h2>Year-Over-Year Comparison</h2>
+                <div class="comparison animated">
+                    <p>Energy Efficiency: In 2023, 500 homes were covered by energy-saving initiatives, while in 2024 the number increased to <strong>1,200 homes</strong>, showing a 140% increase.</p>
+                </div>
+        </section>
+            
+        <button class="button" onclick="printDiv()">Print this page</button>
+
+        <button id="myBtn" class="button">View Emerging Requirements</button>
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+
+                <span class="close">&times;</span>
+                <div id="requirements-reducing-waste" class="requirements hidden">
+                            <table>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Requirement</th>
+                                </tr>
+                                <tr>
+                                    <td>Product Purchase</td>
+                                    <td>Need more localized composting bins in urban areas.</td>
+                                </tr>
+                                <tr>
+                                    <td>Schemes</td>
+                                    <td>Additional financial support needed for rural waste management programs.</td>
+                                </tr>
+                                <tr>
+                                    <td>Community</td>
+                                    <td>Request for increased public awareness on waste management.</td>
+                                </tr>
+                                <tr>
+                                    <td>Programs</td>
+                                    <td>Expansion of coastline cleaning programs requested for new areas.</td>
+                                </tr>
+                                <tr>
+                                    <td>Services</td>
+                                    <td>More recycling centers needed in suburban areas.</td>
+                                </tr>
+                            </table>
+                </div>
+            </div>
+    
+
+        </div>
+    
+    </div>
+
+
+
+
+    <div id="adopting-lifestyles" class="tabcontent">
+
+        <h3>Adopting Healthy Lifestyles</h3>
+        <p>Promoting healthy habits across communities in 2024.</p>
+
+        <div class="subcategories">
+            <h3>Subcategories:</h3>
+            <table>
+                <tr>
+                    <th>Subcategory</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Product Purchase</td>
+                    <td>50,000 health-related products distributed.</td>
+                    <td class="status green">✓</td>
+                </tr>
+                <tr>
+                    <td>Schemes</td>
+                    <td>2 new schemes for subsidizing fitness programs.</td>
+                    <td class="status yellow">!</td>
+                </tr>
+                <tr>
+                    <td>Community</td>
+                    <td>Community fitness programs increased by 15%.</td>
+                    <td class="status green">✓</td>
+                </tr>
+                <tr>
+                    <td>Programs</td>
+                    <td>5 new wellness workshops conducted.</td>
+                    <td class="status green">✓</td>
+                </tr>
+                <tr>
+                    <td>Services</td>
+                    <td>Health screening services expanded.</td>
+                    <td class="status red">X</td>
+                </tr>
+            </table>
+        </div> 
+
+        <section class="comparison-section">
+            <h2>Year-Over-Year Comparison</h2>
+            <div class="comparison animated">
+                <p>Adopting Healthy Lifestyles: In 2023, 300 people participated in wellness programs, whereas in 2024, <strong>800 people</strong> participated, marking a 167% increase.</p>
+            </div>
+        </section>
+
+        <button id="myBtn">Open Modal</button>
+
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+
+                <span class="close">&times;</span>
+                <div id="requirements-reducing-waste" class="requirements hidden">
+                            <table>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Requirement</th>
+                                </tr>
+                                <tr>
+                                    <td>Product Purchase</td>
+                                    <td>Need more localized composting bins in urban areas.</td>
+                                </tr>
+                                <tr>
+                                    <td>Schemes</td>
+                                    <td>Additional financial support needed for rural waste management programs.</td>
+                                </tr>
+                                <tr>
+                                    <td>Community</td>
+                                    <td>Request for increased public awareness on waste management.</td>
+                                </tr>
+                                <tr>
+                                    <td>Programs</td>
+                                    <td>Expansion of coastline cleaning programs requested for new areas.</td>
+                                </tr>
+                                <tr>
+                                    <td>Services</td>
+                                    <td>More recycling centers needed in suburban areas.</td>
+                                </tr>
+                            </table>
+                </div>
+            </div>
+    
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <div id="water-management" class="tabcontent">
+
+        <h3>Water Management </h3>
+        <p>New water management strategies led to improved resource usage.</p>
+
+            <div class="subcategories">
+                    <h3>Subcategories:</h3>
+                    <table>
+                        <tr>
+                            <th>Subcategory</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Product Purchase</td>
+                            <td>100,000 water-efficient appliances distributed.</td>
+                            <td class="status green">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Schemes</td>
+                            <td>4 new schemes for water conservation projects.</td>
+                            <td class="status green">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Community</td>
+                            <td>Community water-saving initiatives increased by 10%.</td>
+                            <td class="status yellow">!</td>
+                        </tr>
+                        <tr>
+                            <td>Programs</td>
+                            <td>500 km of riverbanks cleaned.</td>
+                            <td class="status green">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Services</td>
+                            <td>2 new water recycling plants established.</td>
+                            <td class="status red">X</td>
+                        </tr>
+                    </table>
+            </div>
+
+            <section class="comparison-section">
+                    <h2>Year-Over-Year Comparison</h2>
+                    <div class="comparison animated">
+                        <p>Water Management: In 2023, 50 communities implemented water-saving techniques, and in 2024, <strong>120 communities</strong> adopted these methods, resulting in a 140% increase.</p>
+                    </div>
+            </section>
+
+    </div>
+
+
+
+    <div id="energy-efficiency" class="tabcontent">
+
+        <h3>Energy Efficiency</h3>
+        <p>Energy-saving initiatives led to 20% cost reductions.</p>
+
+            <div class="subcategories">
+                    <h3>Subcategories:</h3>
+                    <table>
+                        <tr>
+                            <th>Subcategory</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Product Purchase</td>
+                            <td>Energy-efficient appliances distributed to 600 homes.</td>
+                            <td class="status green">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Schemes</td>
+                            <td>3 new energy-saving schemes launched.</td>
+                            <td class="status green">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Community</td>
+                            <td>Community workshops on energy efficiency increased by 20%.</td>
+                            <td class="status green">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Programs</td>
+                            <td>1,000 energy audits conducted.</td>
+                            <td class="status green">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Services</td>
+                            <td>Expansion of energy-saving consultation services.</td>
+                            <td class="status red">X</td>
+                        </tr>
+                    </table>
+            </div>
+
+            <section class="comparison-section">
+                    <h2>Year-Over-Year Comparison</h2>
+                    <div class="comparison animated">
+                        <p>Energy Efficiency: In 2023, 500 homes were covered by energy-saving initiatives, while in 2024 the number increased to <strong>1,200 homes</strong>, showing a 140% increase.</p>
+                    </div>
+            </section>
+
+    </div>
+
+
+
+
+    <div id="saving-wetlands" class="tabcontent">
+
+        <h3>Saving Wetlands </h3>
+        <p>Efforts to preserve wetland ecosystems have intensified in 2024.</p>
+
+                <div class="subcategories">
+                    <h3>Subcategories:</h3>
+                    <table>
+                        <tr>
+                            <th>Subcategory</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Product Purchase</td>
+                            <td>20,000 eco-friendly products related to wetland conservation.</td>
+                            <td class="status green">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Schemes</td>
+                            <td>2 new schemes for wetland restoration projects.</td>
+                            <td class="status yellow">!</td>
+                        </tr>
+                        <tr>
+                            <td>Community</td>
+                            <td>Community wetland conservation efforts increased by 8%.</td>
+                            <td class="status green">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Programs</td>
+                            <td>300 km of wetland areas restored.</td>
+                            <td class="status green">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Services</td>
+                            <td>1 new wetland conservation center established.</td>
+                            <td class="status red">X</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <section class="comparison-section">
+                    <h2>Year-Over-Year Comparison</h2>
+                    <div class="comparison animated">
+                        <p>Saving Wetlands: In 2023, 10,000 acres of wetlands were preserved, while in 2024, the area increased to <strong>25,000 acres</strong>, showing a 150% increase.</p>
+                    </div>
+                </section>
+
+    </div>
+
+
+
+    <div id="plastic-pollution" class="tabcontent">
+
+        <h3>Solutions to Plastic Pollution</h3>
+        <p>New methods to reduce plastic waste have emerged.</p>
+
+        <div class="subcategories">
+            <h3>Subcategories:</h3>
+            <table>
+                <tr>
+                    <th>Subcategory</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Product Purchase</td>
+                    <td>150,000 eco-friendly alternatives to plastic distributed.</td>
+                    <td class="status green">✓</td>
+                </tr>
+                <tr>
+                    <td>Schemes</td>
+                    <td>5 new schemes to reduce plastic use.</td>
+                    <td class="status green">✓</td>
+                </tr>
+                <tr>
+                    <td>Community</td>
+                    <td>Community plastic reduction initiatives increased by 20%.</td>
+                    <td class="status green">✓</td>
+                </tr>
+                <tr>
+                    <td>Programs</td>
+                    <td>1,500 km of beach cleaned.</td>
+                    <td class="status green">✓</td>
+                </tr>
+                <tr>
+                    <td>Services</td>
+                    <td>2 new plastic waste management centers established.</td>
+                    <td class="status red">X</td>
+                </tr>
+            </table>
+        </div>
+
+        <section class="comparison-section">
+            <h2>Year-Over-Year Comparison</h2>
+            <div class="comparison animated">
+                <p>Solutions to Plastic Pollution: In 2023, 200 tons of plastic were recycled, and in 2024, this amount rose to <strong>500 tons</strong>, representing a 150% increase.</p>
+            </div>
+        </section>
+
+    </div>
+
+
+
+    <script>
+
+        function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+
+    </script>
+
+
+    <script>
+        
+        var modal = document.getElementById("myModal");
+
+       
+        var btn = document.getElementById("myBtn");
+
+        
+        var span = document.getElementsByClassName("close")[0];
+
+        
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+
+    </script>
+
+
+    <script>
+
+        function printDiv() {
+            var divContents = document.getElementById("reducing-waste").innerHTML;
+            var a = window.open('', '', 'height=500, width=500');
+            a.document.write('<html>');
+            a.document.write('<body> <h1>Reducing Waste Report</h1>');
+            a.document.write(divContents);
+            a.document.write('</body></html>');
+            a.document.close();
+            a.print();
+        }
+
+    </script>
+
+   
+</body>
+</html> 
