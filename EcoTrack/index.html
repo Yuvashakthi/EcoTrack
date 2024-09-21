@@ -34,128 +34,6 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
-    
-
-    <style>
-        section {
-        width: 80%;
-        height: 60px;
-        box-sizing: border-box;
-        margin-top: 60px;
-        margin-left: auto;
-        margin-right: auto;
-
-
-        }
-
-        .card {
-        position: relative;
-        min-width: 200px;
-        height: auto;
-        overflow: hidden;
-        border-radius: 15px;
-        box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-        transition: .5s;
-            margin: 30px;
-        margin-top:30px;
-        }
-        .card:hover {
-        transform:scale(1.1);
-        }
-        .card_red, .card_red .title .fa {
-        background: linear-gradient(-45deg, #ffec61, #f321d7);
-        }
-        .card_violet, .card_violet .title .fa  {
-        background: linear-gradient(-45deg, #f403d1, #64b5f6);
-        }
-        .card_three, .card_three .title .fa  {
-        background: linear-gradient(-45deg, #24ff72, #9a4eff);
-        }
-
-        .card:before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 40%;
-        height: 40%;
-        background: rgba(255, 255, 255, .1);
-        z-index: 1;
-        transform: skewY(-5deg) scale(1.5);
-        }
-
-        .title .fa {
-        color: #fff;
-        font-size: 60px;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 100px;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
-        }
-        .title h2 {
-        position: relative;
-        margin: 20px 0 0;
-        padding: 10;
-        color: #fff;
-        font-size: 28px;
-        z-index: 2;
-        }
-        .price {
-        position: relative;
-        z-index: 2;
-        }
-        .price h4 {
-        margin: 0;
-        padding: 20px 0;
-        color: #fff;
-        font-size: 60px;
-        }
-        .option {
-        position: relative;
-        z-index: 2;
-        }
-        .option ul {
-        margin: 0;
-        padding: 0;
-        }
-        .option ul li {
-        margin: 0 0 10px;
-        margin-bottom: 8px;
-        padding: 0;
-        list-style: none;
-        color: #fff;
-        font-size: 16px;
-        font-weight: bolder;
-        }
-        .card a {
-        display: block;
-        position: relative;
-        z-index: 2;
-        background-color: #fff;
-        color: #262f;
-        width: 150px;
-        height: 40px;
-        text-align: center;
-        margin: 20px auto 0;
-        line-height: 40px;
-        border-radius: 40px;
-        font-size: 16px;
-        cursor: pointer;
-        text-decoration: none;
-        box-shadow: 0 5px 10px rgba(0,0,0, .1);
-        }
-        .card a:hover {
-        
-        }
-
-        .center{
-            display: flex;
-            justify-content: center; 
-            align-items: center; 
-        }
-    </style>
 
 </head>
 
@@ -176,18 +54,17 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="ministry.html" class="nav-item nav-link">Ministry Dashboard</a>
+                <a href="govern-home.html" class="nav-item nav-link">Ministry Dashboard</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Consumer Dashboard</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">User Dashboard</a>
                     <div class="dropdown-menu bg-light m-0">
-                        <a href="#" class="dropdown-item">Event/Activity</a>
-                        <a href="#" class="dropdown-item">Goods Purchased</a>
-                        <a href="#" class="dropdown-item">Event/Activity</a>
-                        <a href="#" class="dropdown-item">Goods Purchased</a>
-                        <a href="#" class="dropdown-item">Event/Activity</a>
+                        <a href="#" class="dropdown-item">Good Product</a>
+                        <a href="#" class="dropdown-item">Schemes</a>
+                        <a href="#" class="dropdown-item">Community</a>
+                        <a href="#" class="dropdown-item">Programs</a>
                     </div>
                 </div>
-                <a href="user-login.html" class="nav-item nav-link">Login <span id="loginCount"></span></a>               
+                <a href="user-login.html" class="nav-item nav-link">Login</a>               
             </div>
         </div>
            
@@ -203,27 +80,25 @@
             <div class="carousel-inner">
 
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/home.jpg" alt="Image">
+                    <img class="w-100" src="img/home.jpeg" alt="Image" style="height: 800px; object-fit: cover;">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <h1 class="text-white mb-3 animated slideInDown" style="line-height:70px;font-size:50px;">Every act of environmental kindness ripples into a wave of positive impact.</h1>
+                                    <h1 class="text-white mb-3 animated slideInDown" style="line-height:70px; font-size:50px;">Every act of environmental kindness ripples into a wave of positive impact.</h1>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-
                 <div class="carousel-item">
-                    <img class="w-100" src="img/home2.jpg" alt="Image">
+                    <img class="w-100" src="img/home2.jpeg" alt="Image" style="height: 800px; object-fit: cover;">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7">
-                                    <h1 class=" text-white mb-3 animated slideInDown" style="line-height:70px;font-size:50px;">Earth smiles when we tread lightly</h1>
-                                    
+                                    <h1 class="text-white mb-3 animated slideInDown" style="line-height:70px; font-size:50px;">Earth smiles when we tread lightly</h1>
                                 </div>
                             </div>
                         </div>
@@ -247,263 +122,337 @@
         </div>
 
     </div>
-
     <!-- Carousel End -->
 
 
 
-    <!-- Top Feature Start -->
+
+   <!-- Top Feature Start -->
     <div class="container-fluid top-feature py-5 pt-lg-0">
+        <div class="container py-5 pt-lg-0">
+            <div class="row gx-4">  <!-- Added gx-4 for horizontal gutter -->
 
-      <div class="container py-5 pt-lg-0">
-
-          <div class="row gx-0">
-
-              <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                  <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                      <div class="d-flex">
-                          <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                              <i class="fa fa-award" style="font-size:30px; color:rgb(0,100,0);"></i>
-                          </div>
-                          <div class="ps-3">
-                              <h4>LiFE Activity</h4>
-                              <span>Blending wisdom and science for sustainable living and global responsibility.</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-
-              <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                  <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                      <div class="d-flex">
-                          <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                              <i class="fa fa-tools" style="font-size:30px; color:rgb(0,100,0);"></i>
-                          </div>
-                          <div class="ps-3">
-                              <h4>Schemes</h4>
-                              <span>A versatile platform for comprehensive growth and development opportunities.</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-
-              <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                  <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                      <div class="d-flex">
-                          <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                              <i class="fa fa-users" style="font-size:30px; color:rgb(0,100,0);"></i>
-                          </div>
-                          <div class="ps-3">
-                              <h4>Awareness</h4>
-                              <span>Cultivating conscious understanding for positive societal impact through information and education.</span>
-                          </div>
-                      </div>
-                  </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5 mb-4" style="min-height: 160px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-tasks" style="font-size:30px; color:rgb(0,100,0);"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>LiFE Campaign Themes</h4>
+                                <span>Explore the six major themes promoting sustainable living.</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5 mb-4" style="min-height: 160px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-clipboard-list" style="font-size:30px; color:rgb(0,100,0);"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>Concentrated Themes</h4>
+                                <span>Our portal focuses on LiFE goods, schemes, community initiatives, and programs for each theme.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-          </div>
-      </div>
-  </div>
-  <!-- Top Feature End -->
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5 mb-4" style="min-height: 160px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-star" style="font-size:30px; color:rgb(0,100,0);"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>Eco-Friendly Rewards</h4>
+                                <span>Each user can earn rewards based on their eco-friendly activities and participation.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <section style="margin-left: auto; margin-right:auto;">
-        <div class="container mt-5">
-            <div class="card spin-card animated">
-            <i class="fas fa-user fa-3x mx-auto mt-3"></i>
-            <!-- <div class="card-body text-center"> -->
-                <a  href="user-login.html" class="card-title" style="color:#000; font-size:large; padding:5px; text-decoration: none; margin-bottom: 8px;">Unlock portal !</a>
-             <!--             
-            </div> -->
             </div>
         </div>
-    </section>
+    </div>
+    <!-- Top Feature End -->
 
-    <section style="margin-top:60px; margin-bottom: 460px;">
 
-     
-          
-        <div class="container-fluid">
-          <div class="container">
-            <div class="row">
-                <h1 style="margin-top: 30px; align-items: center; justify-content: center; margin-left: auto; margin-right: auto; text-align: center;">Benefits of Action</h1>
-              <div class="col-sm-4">
-                <div class="card card_red text-center">
-                  <div class="title">
-                    <h2>Reward</h2>
-                  </div>
-                  
-                  <div class="option">
-                    <ul>
-                      <li>Earn exclusive rewards while you stay green – discounts, special offers, and certificates await on our platform!</li>
-                      
-                      </ul>
-                  </div>
-                  
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card card_violet text-center">
-                  <div class="title">
-                    <h2>Choices</h2>
-                  </div>
-                 
-                  <div class="option">
-                    <ul>
-                      <li>
-                        Earn personalized rewards, from stunning art to surprise boxes and wild wins, shaping your adventure on our platform!</li>
-                      
-                      </ul>
-                  </div>
-                  
-                </div>
-              </div>
-              <div class="col-sm-4">
-                    <div class="card card_three text-center">
-                    <div class="title">
-                        <h2>Surprises</h2>
+
+    <!-- Benefits Section Start -->
+    <div class="container-fluid benefits py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Benefits of Participation</h2>
+            <div class="row gx-4">
+
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-white shadow text-center p-4 rounded mb-4 benefit-card">
+                        <div class="btn-lg-square rounded-circle bg-light mx-auto mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-award" style="font-size: 30px; color: rgb(0,100,0);"></i>
+                        </div>
+                        <h4>Rewards for Participants</h4>
+                        <p>Every participant can earn rewards for their involvement in eco-friendly activities.</p>
                     </div>
-                    
-                    <div class="option">
-                        <ul>
-                        <li>stunning art,surprises, &  crazy rewards await your every interaction! Every click is a celebration.</li>
-                        
-                        </ul>
+                </div>
+
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="bg-white shadow text-center p-4 rounded mb-4 benefit-card">
+                        <div class="btn-lg-square rounded-circle bg-light mx-auto mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-leaf" style="font-size: 30px; color: rgb(0,100,0);"></i>
+                        </div>
+                        <h4>Positive Environmental Impact</h4>
+                        <p>Every activity leads to positive impacts on the environment, promoting sustainability.</p>
                     </div>
-                    
+                </div>
+
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-white shadow text-center p-4 rounded mb-4 benefit-card">
+                        <div class="btn-lg-square rounded-circle bg-light mx-auto mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-hand-holding-heart" style="font-size: 30px; color: rgb(0,100,0);"></i>
+                        </div>
+                        <h4>Resource Requests</h4>
+                        <p>Users can make requests for the resources they need to participate in LiFE themes.</p>
                     </div>
-              </div>
-              <div class="center">
-              <div class="col-sm-4">
-                <div class="card card_three text-center">
-                <div class="title">
-                    <h2>Online Support</h2>
                 </div>
-                
-                <div class="option">
-                    <ul>
-                    <li>Earn government rewards, discounts, and special offers for your eco-activism!</li>
-                    
-                    </ul>
+
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="bg-white shadow text-center p-4 rounded mb-4 benefit-card">
+                        <div class="btn-lg-square rounded-circle bg-light mx-auto mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-sync-alt" style="font-size: 30px; color: rgb(0,100,0);"></i>
+                        </div>
+                        <h4>Daily Actions Matter</h4>
+                        <p>Every individual's daily actions contribute to valuable impacts in LiFE themes.</p>
+                    </div>
                 </div>
-                
+
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.9s">
+                    <div class="bg-white shadow text-center p-4 rounded mb-4 benefit-card">
+                        <div class="btn-lg-square rounded-circle bg-light mx-auto mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-chart-line" style="font-size: 30px; color: rgb(0,100,0);"></i>
+                        </div>
+                        <h4>Government Monitoring</h4>
+                        <p>The government can monitor overall reports in each LiFE theme effectively.</p>
+                    </div>
                 </div>
-          </div> 
-        </div>
+
+                <div class="col-md-4 wow fadeIn" data-wow-delay="1.1s">
+                    <div class="bg-white shadow text-center p-4 rounded mb-4 benefit-card">
+                        <div class="btn-lg-square rounded-circle bg-light mx-auto mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-exclamation-triangle" style="font-size: 30px; color: rgb(0,100,0);"></i>
+                        </div>
+                        <h4>Addressing Gaps</h4>
+                        <p>Government can address the gaps in areas related to LiFE themes efficiently.</p>
+                    </div>
+                </div>
+
             </div>
-          </div>
         </div>
-      </section>
-
-      
-
-    
-     <!-- Features Start -->
-     <div class="container-xxl py-5">
-      <div class="container">
-          <div class="row g-5 align-items-center">
-              <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                  <p class="fs-5 fw-bold text-primary">Why EcoTrack!</p>
-                  <h1 class="display-5 mb-4">Few Reasons Why People Choosing Us!</h1>
-                  <p class="mb-4">Choosing an eco-friendly lifestyle preserves the planet by reducing carbon footprint and promoting sustainable choices for a healthier environment and resource preservation.</p>
-                  <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
-              </div>
-              <div class="col-lg-6">
-                  <div class="row g-4 align-items-center">
-                      <div class="col-md-6">
-                          <div class="row g-4">
-                              <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
-                                  <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
-                                      <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 100px; height: 100px;">
-                                          <i class="fa fa-tree fa-tree text-primary " style="font-size: 50px;"></i>
-                                      </div>
-                                      <h4 class="mb-0">Earthwise Living</h4>
-                                  </div>
-                              </div>
-                              <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
-                                  <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
-                                      <div class="btn-square bg-light rounded-circle mx-auto mb-6" style="width: 100px; height: 100px;">
-                                          <i class="fa fa-leaf fa-leaf text-primary " style="font-size: 50px;"></i>
-                                      </div>
-                                      <h4 class="mb-0"style="margin:20px;">EcoHarmony Lifestyle</h4>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
-                          <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
-                              <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                                  <i class="fa fa-tools fa-aw text-primary" style="font-size: 50px;"></i>
-                              </div>
-                              <h4 class="mb-0">GreenImpact Living</h4>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- Features End -->
+    </div>
+    <!-- Benefits Section End -->
 
 
-    
-   
-   
 
-    <!-- Facts Start -->
-    <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">500</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Consumers</span>
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="fs-5 fw-bold text-primary">Why EcoTrack!</p>
+                    <h1 class="display-5 mb-4">Reasons to Choose Us!</h1>
+                    <p class="mb-4">Every user can earn rewards while monitoring their impact. The government can address gaps in LiFE themes, and users can request resources for their required areas.</p>
                 </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">433</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Participants</span>
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">222</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Awareness</span>
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">465</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Voulnteer Activity</span>
+                <div class="col-lg-6">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                        <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 100px; height: 100px;">
+                                            <i class="fa fa-award text-primary" style="font-size: 50px;"></i>
+                                        </div>
+                                        <h4 class="mb-0">Rewards for Users</h4>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                        <div class="btn-square bg-light rounded-circle mx-auto mb-6" style="width: 100px; height: 100px;">
+                                            <i class="fa fa-chart-line text-primary" style="font-size: 50px;"></i>
+                                        </div>
+                                        <h4 class="mb-0" style="margin:20px;">Impact Monitoring</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                            <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                    <i class="fa fa-map-marker-alt text-primary" style="font-size: 50px;"></i>
+                                </div>
+                                <h4 class="mb-0">Resource Requests</h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Facts End -->
-    
-     <!-- About Start -->
-     <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5 align-items-end">
-                <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/4b9a0c0e54e8c9d8e730f43ab6248739.jpg">
+    <!-- Features End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <h1 class="display-4 mb-3">LiFE campaign's themes</h1>
                 </div>
-                <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
-                    <h1 class="display-5 mb-4">What to do?</h1>
-                    <p class="mb-4">Adopt an eco-friendly lifestyle by choosing sustainable products, minimizing waste, conserving energy and water, and supporting eco-friendly initiatives.
-                        </p>
-                    <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
-                </div>
-                <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row g-5">
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <div class="border-start ps-4">
-                                <i class="fa fa-tree fa-3x text-primary mb-3"></i>
-                                <h4 class="mb-3">GreenHabit Living</h4>
-                                <span> Sustainable choices for a greener lifestyle.</span>
+
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded d-flex h-100">
+                            <div class="service-img rounded">
+                                <img class="img-fluid" src="img/waste.jpeg" alt="">
+                            </div>
+                            <div class="service-text rounded p-5">
+                                <div class="btn-square rounded-circle mx-auto mb-3">
+                                    <i class="fa fa-trash fa-3x text-primary"></i>
+                                </div>
+                                <h4 class="mb-3">Reducing Waste</h4>
+                                <p class="mb-4">Waste is only waste if we waste the opportunity to reuse it.</p>
+                                <a class="btn btn-sm" href="https://nwm.gov.in/catchtherain"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded d-flex h-100">
+                            <div class="service-img rounded">
+                                <img class="img-fluid" src="img/healthy.jpeg" alt="">
+                            </div>
+                            <div class="service-text rounded p-5">
+                                <div class="btn-square rounded-circle mx-auto mb-3">
+                                    <i class="fa fa-heartbeat fa-3x text-primary"></i>
+                                </div>
+                                <h4 class="mb-3">Adopting Healthy Lifestyles</h4>
+                                <p class="mb-4">A healthy lifestyle is the foundation of a vibrant life. Choose well, live well.</p>
+                                <a class="btn btn-sm" href="https://swachhbharatmission.gov.in/sbmcms/index.htm"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded d-flex h-100">
+                            <div class="service-img rounded">
+                                <img class="img-fluid" src="img/water.jpeg" alt="">
+                            </div>
+                            <div class="service-text rounded p-5">
+                                <div class="btn-square rounded-circle mx-auto mb-3">
+                                    <i class="fa fa-tint fa-3x text-primary"></i>
+                                </div>
+                                <h4 class="mb-3">Water Management</h4>
+                                <p class="mb-4">Every drop counts—conserve today to secure tomorrow’s flow.</p>
+                                <a class="btn btn-sm" href="https://evyatra.beeindia.gov.in/central-govt-initiative-details/dhi-fame-scheme-phase-1-2015/"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded d-flex h-100">
+                            <div class="service-img rounded">
+                                <img class="img-fluid" src="img/energy.jpeg" alt="">
+                            </div>
+                            <div class="service-text rounded p-5">
+                                <div class="btn-square rounded-circle mx-auto mb-3">
+                                    <i class="fa fa-bolt fa-3x text-primary"></i>
+                                </div>
+                                <h4 class="mb-3">Energy Efficiency</h4>
+                                <p class="mb-4">Efficient energy use is the key to powering a sustainable future.</p>
+                                <a class="btn btn-sm" href="https://swachhbharatmission.gov.in/sbmcms/index.htm"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded d-flex h-100">
+                            <div class="service-img rounded">
+                                <img class="img-fluid" src="img/wetlands.jpeg" alt="">
+                            </div>
+                            <div class="service-text rounded p-5">
+                                <div class="btn-square rounded-circle mx-auto mb-3">
+                                    <i class="fa fa-water fa-3x text-primary"></i>
+                                </div>
+                                <h4 class="mb-3">Saving Wetlands</h4>
+                                <p class="mb-4">Wetlands are nature's guardians—protect them to protect our planet.</p>
+                                <a class="btn btn-sm" href="https://nwm.gov.in/catchtherain"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded d-flex h-100">
+                            <div class="service-img rounded">
+                                <img class="img-fluid" src="img/waste.jpeg" alt="">
+                            </div>
+                            <div class="service-text rounded p-5">
+                                <div class="btn-square rounded-circle mx-auto mb-3">
+                                    <i class="fa fa-recycle fa-3x text-primary"></i>
+                                </div>
+                                <h4 class="mb-3">Solutions to Plastic Pollution</h4>
+                                <p class="mb-4">Turning the tide on plastic pollution starts with one simple choice: rethink, reduce, reuse.</p>
+                                <a class="btn btn-sm" href="https://jaljeevanmission.gov.in/"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+
+    
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="display-5 mb-4">How to Get Involved?</h1>
+                    <p class="mb-4">Join us in fostering a sustainable future! Engage in eco-friendly practices by supporting local initiatives, participating in community programs, and reducing your carbon footprint through mindful daily actions.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-5">
+                        <div class="col-12 col-sm-6 col-lg-6">
+                            <div class="border-start ps-4">
+                                <i class="fa fa-recycle fa-3x text-primary mb-3"></i>
+                                <h4 class="mb-3">Reduce & Recycle</h4>
+                                <span>Embrace practices that minimize waste and promote recycling in your community.</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-6">
+                            <div class="border-start ps-4">
+                                <i class="fa fa-hand-holding-heart fa-3x text-primary mb-3"></i>
+                                <h4 class="mb-3">Support Local Initiatives</h4>
+                                <span>Get involved with local organizations that promote sustainability and conservation.</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-6">
                             <div class="border-start ps-4">
                                 <i class="fa fa-users fa-3x text-primary mb-3"></i>
-                                <h4 class="mb-3">EcoStride Lifestyle</h4>
-                                <span>Harmonizing well-being with eco-conscious choices for a sustainable life.</span>
+                                <h4 class="mb-3">Join Community Events</h4>
+                                <span>Participate in workshops and events that raise awareness about environmental issues.</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-6">
+                            <div class="border-start ps-4">
+                                <i class="fa fa-clipboard-list fa-3x text-primary mb-3"></i>
+                                <h4 class="mb-3">Track Your Impact</h4>
+                                <span>Use tools to monitor your eco-friendly actions and see the difference you're making.</span>
                             </div>
                         </div>
                     </div>
@@ -514,159 +463,7 @@
     <!-- About End -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-
-   
-       <!-- Service Start -->
-       <div class="container-xxl py-5">
-        <div class="container">
-
-
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-
-                <h1 class="display-4 mb-3">LiFE campaign's themes</h1>
-               
-            </div>
-
-            <div class="row g-4">
-
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/rain back.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/rain png.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Reducing waste</h4>
-                            <p class="mb-4">Waste is only waste if we waste the opportunity to reuse it.</p>
-                            <a class="btn btn-sm" href="https://nwm.gov.in/catchtherain"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/swatch back.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/swatch.png.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Adopting healthy lifestyles</h4>
-                            <p class="mb-4">A healthy lifestyle is the foundation of a vibrant life. Choose well, live well.</p>
-                            <a class="btn btn-sm" href="https://swachhbharatmission.gov.in/sbmcms/index.htm"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/fame-II.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/fame-II.png.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Water management</h4>
-                            <p class="mb-4">Every drop counts—conserve today to secure tomorrow’s flow.</p>
-                            <a class="btn btn-sm" href="https://evyatra.beeindia.gov.in/central-govt-initiative-details/dhi-fame-scheme-phase-1-2015/"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-                   
-
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded d-flex h-100">
-                            <div class="service-img rounded">
-                                <img class="img-fluid" src="img/save water back.jpg" alt="">
-                            </div>
-                            <div class="service-text rounded p-5">
-                                <div class="btn-square rounded-circle mx-auto mb-3">
-                                    <img class="img-fluid" src="img/save water.png.png" alt="Icon">
-                                </div>
-                                <h4 class="mb-3">Energy efficiency</h4>
-                                <p class="mb-4">Empower a grEfficient energy use is the key to powering a sustainable future.</p>
-                                <a class="btn btn-sm" href="https://swachhbharatmission.gov.in/sbmcms/index.htm"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded d-flex h-100">
-                            <div class="service-img rounded">
-                                <img class="img-fluid" src="img/save energy back.jpg" alt="">
-                            </div>
-                            <div class="service-text rounded p-5">
-                                <div class="btn-square rounded-circle mx-auto mb-3">
-                                    <img class="img-fluid" src="img/save energy.png.png" alt="Icon">
-                                </div>
-                                <h4 class="mb-3">Saving wetlands</h4>
-                                <p class="mb-4">Wetlands are nature's guardians—protect them to protect our planet.</p>
-                                <a class="btn btn-sm" href="https://nwm.gov.in/catchtherain"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded d-flex h-100">
-                            <div class="service-img rounded">
-                                <img class="img-fluid" src="img/plastic back.jpg" alt="">
-                            </div>
-                            <div class="service-text rounded p-5">
-                                <div class="btn-square rounded-circle mx-auto mb-3">
-                                    <img class="img-fluid" src="img/plastic1.png.png" alt="Icon">
-                                </div>
-                                <h4 class="mb-3">Solutions to plastic pollution</h4>
-                                <p class="mb-4">Turning the tide on plastic pollution starts with one simple choice: rethink, reduce, reuse.</p>
-                                <a class="btn btn-sm" href="https://jaljeevanmission.gov.in/"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-
-
-    <div class="container">
-        <div class="row">
-          <!-- Left side with image -->
-          <div class="col-md-4">
-            <img src="img/benefit.jpg" alt="Image" class="img-fluid">
-          </div>
-          
-          <!-- Right side with content -->
-          <div class="col-md-8">
-            <h2>Benefit</h2>
-            <p>Embracing an environment-friendly lifestyle yields numerous benefits. These include positive
-                environmental impact, contributions to a sustainable future, personal well-being, cost savings,
-                global and community influence, cultural value preservation, and an educational platform to
-                raise awareness about crucial environmental issues</p>
-            <!-- Add more content as needed -->
-          </div>
-        </div>
-      </div>
-
-  
- 
-
- 
-
-
-  <!-- Back to Top -->
-  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
   <!-- JavaScript Libraries -->
@@ -683,33 +480,6 @@
 
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('.spin-card').on('click', function(){
-        $(this).toggleClass('rotateIn');
-      });
-    });
-  </script>
-
-<script>
-   
-    function fetchLoginCount() {
-       
-        return 2; 
-    }
-
-    
-    function updateLoginCount() {
-        const loginCount = fetchLoginCount();
-        const loginCountElement = document.getElementById('loginCount');
-        loginCountElement.textContent = ` (${loginCount} logged in today)`; // Display the count
-    }
-
-    
-    window.onload = function () {
-        updateLoginCount();
-    };
-</script>
 
 </body>
 
