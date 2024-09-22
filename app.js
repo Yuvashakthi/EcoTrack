@@ -73,6 +73,10 @@ app.get('/community2', (req, res) => {
     res.render('community2');
 });
 
+app.get('/community3', (req, res) => {
+    res.render('community3');
+});
+
 app.get('/container', (req, res) => {
     res.render('container');
 });
@@ -97,6 +101,10 @@ app.get('/schemes2', (req, res) => {
     res.render('schemes2');
 });
 
+app.get('/schemes3', (req, res) => {
+    res.render('schemes3');
+});
+
 app.get('/service_form', (req, res) => {
     res.render('service_form');
 });
@@ -109,12 +117,24 @@ app.get('/service2', (req, res) => {
     res.render('service2');
 });
 
+app.get('/service3', (req, res) => {
+    res.render('service3');
+});
+
 app.get('/straw', (req, res) => {
     res.render('straw');
 });
 
 app.get('/wax', (req, res) => {
     res.render('wax');
+});
+
+app.get('/product2', (req, res) => {
+    res.render('product2');
+});
+
+app.get('/nut', (req, res) => {
+    res.render('nut');
 });
 
 app.get('/user-login', (req, res) => {
