@@ -53,6 +53,69 @@ app.get('/gvt-wetlands-report', (req, res) => {
     res.render('gvt-wetlands-report');
 });
 
+app.get('/product', (req, res) => {
+    res.render('product');
+});
+
+app.get('/bag', (req, res) => {
+    res.render('bag');
+});
+
+app.get('/cart', (req, res) => {
+    res.render('cart');
+});
+
+app.get('/community1', (req, res) => {
+    res.render('community1');
+});
+
+app.get('/community2', (req, res) => {
+    res.render('community2');
+});
+
+app.get('/container', (req, res) => {
+    res.render('container');
+});
+
+app.get('/program_form', (req, res) => {
+    res.render('program_form');
+});
+
+app.get('/program2', (req, res) => {
+    res.render('program2');
+});
+
+app.get('/scheme_form', (req, res) => {
+    res.render('scheme_form');
+});
+
+app.get('/schemes1', (req, res) => {
+    res.render('schemes1');
+});
+
+app.get('/schemes2', (req, res) => {
+    res.render('schemes2');
+});
+
+app.get('/service_form', (req, res) => {
+    res.render('service_form');
+});
+
+app.get('/service1', (req, res) => {
+    res.render('service1');
+});
+
+app.get('/service2', (req, res) => {
+    res.render('service2');
+});
+
+app.get('/straw', (req, res) => {
+    res.render('straw');
+});
+
+app.get('/wax', (req, res) => {
+    res.render('wax');
+});
 
 app.get('/user-login', (req, res) => {
     res.render('user-login');

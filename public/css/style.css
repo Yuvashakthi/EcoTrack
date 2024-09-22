@@ -534,3 +534,32 @@ h6,
     background: linear-gradient(to bottom right, #4CAF50, #45a049); /* Adjust the gradient colors as needed */
     color: #fff; /* Text color on the gradient background */
   }
+
+  .dropdown-toggle {
+    position: relative;
+    padding-right: 30px; 
+}
+
+.dropdown-toggle::after {
+    content: '\25BC'; 
+    position: absolute;
+    right: 25px; 
+    top: 55%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #8bc34a; /* Change this color as per your design */
+}
+
+
+/* Add a light blue border to all form fields */
+.form-control {
+    border: 2px solid #525368 !important; /* Light blue border */
+    border-radius: 5px;
+}
+
+/* Add a different border color on focus */
+.form-control:focus {
+    border-color: #348E38 !important; /* Darker blue on focus */
+    box-shadow: none;
+}
+
