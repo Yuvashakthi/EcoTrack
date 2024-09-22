@@ -1,7 +1,7 @@
 {
   "name": "wyf---ecotrack",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,7 @@
   "description": "",
   "dependencies": {
     "ejs": "^3.1.10",
-    "expressjs": "^1.0.1",
+    "express": "^4.21.0",
     "node": "^22.9.0",
     "nodemon": "^3.1.7"
   }
