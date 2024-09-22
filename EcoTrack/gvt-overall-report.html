@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiFE Campaign Theme Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e8f5e9; 
+        }
+        header {
+            background: #348E38; 
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .chart-container {
+            width: 600px;
+            height: 400px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto 10px; 
+            background: #c8e6c9; 
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            color: #000;
+        }
+        th {
+            background-color: #348E38;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+        .report-heading {
+            color: #348E38; 
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px; 
+            font-weight: bold; 
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <header>
+        <h1>LiFE Campaign Monitoring Dashboard</h1>
+        <h2>Theme Report</h2>
+    </header>
+
+
+    <div class="chart-container">
+      <canvas id="myChart"></canvas>
+    </div>
+
+
+    <section>
+
+        <h3 class="report-heading">Detailed Report</h3>
+
+        <table>
+            <tr>
+                <th>Theme</th>
+                <th>Current Month</th>
+                <th>Previous Month</th>
+                <th>Year to Date</th>
+            </tr>
+            <tr>
+                <td>Reducing Waste</td>
+                <td>320</td>
+                <td>280</td>
+                <td>3400</td>
+            </tr>
+            <tr>
+                <td>Adopting Healthy Lifestyles</td>
+                <td>300</td>
+                <td>250</td>
+                <td>3100</td>
+            </tr>
+            <tr>
+                <td>Water Management</td>
+                <td>420</td>
+                <td>390</td>
+                <td>4500</td>
+            </tr>
+            <tr>
+                <td>Energy Efficiency</td>
+                <td>215</td>
+                <td>200</td>
+                <td>2200</td>
+            </tr>
+            <tr>
+                <td>Saving Wetlands</td>
+                <td>198</td>
+                <td>180</td>
+                <td>2100</td>
+            </tr>
+            <tr>
+                <td>Solutions to Plastic Pollution</td>
+                <td>360</td>
+                <td>340</td>
+                <td>4000</td>
+            </tr>
+        </table>
+        
+    </section>
+
+
+    <script>
+        
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Reducing Waste', 'Adopting Healthy Lifestyles', 'Water Management', 'Energy Efficiency', 'Saving Wetlands', 'Solutions to Plastic Pollution'],
+                datasets: [{
+                    label: 'Number of Interactions',
+                    data: [320, 300, 420, 215, 198, 360],
+                    backgroundColor: [
+                        'rgba(34, 139, 34, 0.8)',
+                        'rgba(60, 179, 113, 0.8)',
+                        'rgba(32, 178, 170, 0.8)',
+                        'rgba(70, 130, 180, 0.8)',
+                        'rgba(255, 165, 0, 0.8)',
+                        'rgba(255, 99, 71, 0.8)'
+                    ],
+                    borderColor: [
+                        'rgba(34, 139, 34, 1)',
+                        'rgba(60, 179, 113, 1)',
+                        'rgba(32, 178, 170, 1)',
+                        'rgba(70, 130, 180, 1)',
+                        'rgba(255, 165, 0, 1)',
+                        'rgba(255, 99, 71, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            precision: 0
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+    </script>
+
+
+</body>
+</html>
