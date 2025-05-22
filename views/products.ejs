@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/header.ejs') %>
+
+<link href="css/dashboard.css" rel="stylesheet">
+
+<body>
+
+    <%- include('./partials/nav.ejs') %>
+
+
+    <div class="form-container">
+      <form id="form1">
+        <div class="form-group">
+          <label for="input1">Name of the Goods Purchased</label>
+          <select id="goodsSelect">
+            <option value="LED Bulbs">LED Bulbs</option>
+            <option value="SolarWaterHeater">Solar Water Heater</option>
+            <option value="EcoFriendlyPowerbulb">Eco Friendly Powerbulb</option>
+            <option value="WaterSavingAppliances">Water Saving Appliances</option>
+            <option value="ReusableWaterBottle">Reusable Water Bottle</option>
+            <option value="JuteBags">Jute Bags</option>
+            <option value="ReusableCups">Reusable Cups</option>
+            <option value="ReusableProduceBags">Reusable Produce Bags</option>
+            <option value="BambooUtensils">Bamboo Utensils</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="imageUpload">Upload Bill/Proof</label>
+          <input type="file" id="imageUpload">
+        </div>
+        <button type="button" onclick="showSecondForm()">Upload</button>
+      </form>
+    
+
+      <div class="form-container second-form">
+        <form id="form2">
+          <div class="form-group">
+            <label for="input2a">Life Activity Covered</label>
+            <input type="text" id="input2a">
+          </div>
+          <div class="form-group">
+            <label for="input2b">Measurable Outcome</label>
+            <input type="text" id="input2b">
+          </div>
+          <div class="form-group">
+            <label for="input2c">Scheme Achieved</label>
+            <input type="text" id="input2c">
+          </div>
+          <div class="form-group">
+            <label for="input2d">Awareness Program Reached</label>
+            <select id="awarenessSelect">
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </form>
+      </div>
+
+
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <p>No of Eco-Product Purchased</p>
+                <h5 class="card-title" id="activityCount">8</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <p>Discount claims Received</p>
+                <h5 class="card-title" id="outcomecount">19</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <script src="js/goods.js"></script>
+
+    </body>
+    </html>
